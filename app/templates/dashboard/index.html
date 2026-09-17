@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard">
+    <h1>¡Bienvenido, {{ usuario.nombres }} {{ usuario.apellidos }}!</h1>
+    <p class="rol-info">Rol: <strong>{{ usuario.rol.nombre }}</strong> | Estado: <strong>{{ usuario.estado }}</strong></p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="card-number">0</div>
+            <div class="card-label">Proyectos</div>
+        </div>
+        <div class="card">
+            <div class="card-number">0</div>
+            <div class="card-label">Tareas</div>
+        </div>
+        <div class="card">
+            <div class="card-number">0</div>
+            <div class="card-label">Avances</div>
+        </div>
+    </div>
+
+    <div class="welcome-box">
+        <h3>🚀 Módulo de Autenticación Funcionando</h3>
+        <p>Has iniciado sesión correctamente. Los módulos de proyectos, tareas y avances se implementarán en las siguientes entregas.</p>
+    </div>
+</div>
+{% endblock %}
